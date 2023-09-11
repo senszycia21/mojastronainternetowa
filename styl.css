@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: #d5d1c9;
+    font-family: Papyrus;
+}
+
+header {
+    background-color: #233434;
+    color: #ce0707;
+    text-align: center;
+    padding: 60px;
+}
+
+section{
+    background-color: #2f3f3f;
+    color: red;
+}
