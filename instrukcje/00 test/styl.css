@@ -1,23 +1,29 @@
 body {
     background-color: black;
     color: #d5d1c9;
-    font-family: "Papyrus";
+    font-family: "SansSerif";
 }
 
 header {
     background-color: #233434;
-    color: #ce0707;
+    color: goldenrod;
     text-align: center;
     padding: 60px;
 }
 
 section{
     background-color: #2f3f3f;
-    color: red;
+    color: gold;
 }
 
 footer{
     font-size: 80px;
     background-color: #424f4f;
+}
+section{
+    padding: 30px;
+}
 
+img{
+    width: 100%;
 }
