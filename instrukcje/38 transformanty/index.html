@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Transformanty</title>
+    <meta name="author" content="Sergiusz Pietralczyk" />
+    <script>
+        window.onload = function() {
+            var canvas = document.getElementById("drawingCanvas");
+            var context = canvas.getContext("2d");
+            context.fillRect(0, 0, 30, 30);
+            context.fillStyle(200,0,0)
+            context.translate(50, 50);
+            context.stroke();
+            context.rect(0, 0, 30, 30);
+            context.fillRect(0, 0, 30, 30);
+            context.fillStyle(0,200,0)
+            context.translate(50, 50);
+            context.stroke();
+
+            context.translate(50, 50);
+            context.rect(0, 0, 30, 30);
+            context.stroke();
+        }
+    </script>
+</head>
+<body>
+<canvas id="drawingCanvas" width="500" height="300"></canvas>
+</body>
+</html>

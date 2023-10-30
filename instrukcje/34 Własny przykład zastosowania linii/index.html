@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Własne linie</title>
+    <meta name="author" content="Sergiusz Pietralczyk" />
+  <style>
+    canvas {
+      border: 5px dashed blue;
+    }
+    body{
+        background-color: lightgray;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      var canvas = document.getElementById("drawingCanvas")
+      var context = canvas.getContext("2d");
+
+      context.lineWidth = 30;
+      context.strokeStyle = "rgb(200,0,200)"
+      context.moveTo(50,500);
+      context.lineTo(960,500);
+      context.lineCap = "round";
+      context.stroke();
+
+      context.strokeStyle= "rgb(200,200,0)"
+      context.lineWidth = 80;
+      context.beginPath();
+      context.moveTo(250,445)
+      context.lineTo(250,100)
+      context.lineCap = "square"
+      context.stroke();
+
+    context.strokeStyle= "rgb(0,200,200)"
+    context.lineWidth = 10;
+    context.beginPath();
+    context.moveTo(1000,500)
+    context.lineTo(280,50)
+    context.lineCap = "butt"
+    context.stroke();
+
+    context.strokeStyle= "rgb(600,434,200)"
+    context.lineWidth = 5;
+    context.beginPath();
+    context.moveTo(450,25)
+    context.lineTo(100,70)
+    context.stroke();
+
+    context.strokeStyle = "rgb(101,166,36)"
+    context.line
+    };
+
+  </script>
+
+</head>
+<body>
+  <canvas id="drawingCanvas" width="1000" height="500"></canvas>
+</body>
+</html>

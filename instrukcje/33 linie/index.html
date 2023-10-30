@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Linie</title>
+  <meta name="author" content="Sergiusz Pietralczyk" />
+  <style>
+    canvas {
+      border: 1px dashed black;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      var canvas = document.getElementById("drawingCanvas");
+      var context = canvas.getContext("2d");
+      // Umieść kod odpowiedzialny za rysowanie w tym miejscu.
+      context.lineWidth = 20;
+      context.strokeStyle = "rgb(205,40,40)";
+      context.moveTo(350,300);
+      context.lineTo(350,20);
+      context.lineCap = "butt";
+      context.stroke ();
+      context.stroke();
+      context.strokeStyle = "rgb(10,200,10)";
+      context.beginPath();
+      context.moveTo(250,300);
+      context.lineTo(250,20);
+      context.lineCap = "round";
+      context.stroke();
+      context.strokeStyle = "rgb(10,10,200)";
+      context.beginPath();
+      context.moveTo(150,300);
+      context.lineTo(150,20);
+      context.lineCap = "square";
+      context.stroke();
+    };
+  </script>
+</head>
+<body>
+<canvas id="drawingCanvas" width="500" height="300"></canvas>
+</body>
+</html>

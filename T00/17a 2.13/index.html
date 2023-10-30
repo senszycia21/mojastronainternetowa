@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Formularz rejestracyjny</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>ZADANIE 17A.2.13</h1>
+<h2>Sergiusz Pietralczyk 1P</h2>
+<form action="http://localhost/skrypt_form.php" method="post">
+    <div>
+        <h1>Formularz rejestracyjny:</h1>
+        <table>
+            <tr>
+                <td>Podaj swoje nazwisko:</td>
+                <td><input type="text" name="nazw" value="" size="30"></td>
+            </tr>
+            <tr>
+                <td>Podaj swoje imię:</td>
+                <td><input type="text" name="im" value="" size="30"></td>
+            </tr>
+            <tr>
+                <td>Podaj swój adres zamieszkania:</td>
+                <td><input type="text" name="adres" value="" size="30"></td>
+            </tr>
+            <tr>
+                <td>Podaj swój numer PESEL:</td>
+                <td><input type="text" name="pes" value="" size="30"></td>
+            </tr>
+            <tr>
+                <td>Podaj numer karty kredytowej:</td>
+                <td><input type="text" name="karta" value="" size="30"></td>
+            </tr>
+        </table>
+        <p>Podaj w jakim banku masz kartę:</p>
+        <label><input list="bank" name="bank"></label>
+        <datalist id="bank">
+            <option value="Santander">
+            <option value="Alior Bank">
+            <option value="PKO Bank Polski">
+            <option value="ING Bank Śląski">
+        </datalist>
+        <p>Wybierz płeć:<br></p>
+        <label><input type="radio" value= "kobieta" name="plec">Kobieta</label>
+        <label>
+            <input type="radio" value="mężczyzna" name="plec">Mężczyzna
+        </label>
+        <p>Podaj wiek:</p>
+        <label><input list="wiek" name="wiek"></label>
+        <datalist id="wiek">
+            <option value="16-24">
+            <option value="25-39">
+            <option value="40-60">
+            <option value="powyżej 60">
+        </datalist>
+        <p>Podaj adres e-mail:</p>
+        <label><input type="email" name="adr" value="" size="30"></label>
+        <p>Wybierz wykształcenie:</p>
+        <label><input type="radio" value="podstawowe" name="wykszt">Podstawowe<br></label>
+        <label><input type="radio" value="średnie" name="wykszt">Średnie<br></label>
+        <label><input type = "radio" value="wyższe" name="wykszt">Wyższe</label>
+            <p>Wybierz języki:</p>
+            <select name="języki" size="6" multiple>
+                <option value="Język angielski">Język angielski</option>
+                <option value="Język niemiecki">Język niemiecki</option>
+                <option value="Język francuski">Język francuski</option>
+                <option value="Język włoski">Język włoski</option>
+                <option value="Język rosyjski">Język rosyjski</option>
+                <option value="Język hiszpański">Język hiszpański</option>
+            </select>
+            <p>Wybierz zainteresowania:</p>
+            <input type="checkbox" name="hobby" value="moto">Motoryzacja<br>
+            <input type="checkbox" name="hobby" value="sport">Sport<br>
+            <input type="checkbox" name="hobby" value="muza">Muzyka<br>
+            <input type="checkbox" name="hobby" value="tan">Taniec<br>
+            <input type="checkbox" name="hobby" value="gry">Gry komputerowe<br>
+            <input type="checkbox" name="hobby" value="inna">Inne (podaj jakie):
+             <input name="hobby">
+                <p>Wpisz swoje uwagi:</p>
+                <textarea name="uwagi" cols="37" rows="7"></textarea>
+                <p><input type="checkbox" name="opcje"> Zgadzam się na przetwarzanie moich
+                    danych osobowych</p>
+                <p><input type="checkbox" name="opcje"> Zgadzam się by sprzedać duszę diabłu</p>
+                <p>
+                    <input type="submit" value="Wyślij" name="wyslij">
+                    <input type="reset" value="Wyczyść" name="zeruj">
+                </p>
+                </div>
+</form>
+</body>
+</html>

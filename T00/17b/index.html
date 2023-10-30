@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Własne trampki</title>
+    <style>
+        header {
+            padding: 10px;
+            font-size: 30px;
+
+        }
+        body{
+            background-color: #5dd3f5;
+            padding: 50px;
+        }
+        fieldset {
+            font: 90%/1.5em "system-ui";
+            border: 4px black double;
+            border-spacing: 0;
+            -moz-border-radius: 12px;
+            -moz-box-shadow: #6a3d37 5px 5px 6px;
+            -webkit-border-radius: 12px;
+            -webkit-box-shadow: #6a3d37 5px 5px 6px;
+            border-radius: 12px;
+            box-shadow: #6a3d37 5px 5px 6px;
+            background: #17b7b7;
+        }
+        ol, ul{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>Zadanie 17 - Zaprojektuj własne Trampki</h1>
+<h2>Autor: Sergiusz Pietralczyk 1p</h2>
+    <hr>
+</header>
+<div id="formularz">
+<form action="contest.php" method="post">
+    <fieldset>
+        <legend>Podstawowe dane</legend>
+
+        <ol>
+            <label for= "form-name">Imię i nazwisko:</label><input type="text" name ="username" id="form-name"></li>
+            <li><label for= "form-email">E-mail:</label><input type="email" name ="emailaddress" id="form-email"></li>
+            <li><label for= "form-tel">Telephone:</label><input type="tel" name = "telephone" id="form-tel"></li>
+            <li><label for="form-story">Moje buty są TAKIE stare...</label><br>
+            <textarea name="story" rows="4" cols="60" maxlength="300" id="form-story" placeholder="Nie więcej niż 300 znaków"></textarea>
+        </ol>
+
+    </fieldset>
+    <h2>Zaprojektuj własne trampki:</h2>
+    <fieldset>
+        <legend>Własny projekt butów</legend>
+
+        <fieldset>
+            <legend>Kolor <em>(wybierz jeden)</em>:</legend>
+            <ul>
+                <li><label><input type="radio" name="color" value="red">Czerwony</label></li>
+                <li><label><input type="radio" name="color" value="blue">Niebieski</label></li>
+                <li><label><input type="radio" name="color" value="black">Czarny</label></li>
+                <li><label><input type="radio" name="color" value="silver">Srebrny</label></li>
+                <li><label><input type="radio" name="color" value="yellow">Żółty</label></li>
+                <li><label><input type="radio" name="color" value="green">Zielony</label></li>
+            </ul>
+        </fieldset>
+    <fieldset>
+        <legend>Opcje<em>(możesz wybrać kilka)</em></legend>
+        <ul>
+            <li><input type="checkbox" name="features[]" value="laces"> Błyszczące sznurówki</li>
+            <li><input type="checkbox" name="features[]" value="logo"> Metalowe logo</li>
+            <li><input type="checkbox" name="features[]" value="heels">Świecące podeszwy</li>
+            <li><input type="checkbox" name="features[]" value="mp3">Odtwarzanie MP3</li>
+        </ul>
+    </fieldset>
+        <fieldset>
+            <legend>Rozmiar</legend>
+            <p>Rozmiar zgodny ze standardowymi numerami butów: <select name="size" size="1">
+            <option>37</option>
+            <option>38</option>
+            <option>39</option>
+            <option>40</option>
+            <option>41</option>
+            <option>42</option>
+            <option>43</option>
+            <option>44</option>
+            <option>45</option>
+            <option>46</option>
+            <option>47</option>
+            </select>
+            </p>
+        </fieldset>
+        <input type="number">Ile chcesz sztuk?
+    </fieldset>
+    <p><input type="submit" value="Podrasuj swoje buty!">
+    <input type="reset"></p>
+    <h2>Stwórz jeszcze inne własne trampki!</h2>
+    <fieldset>
+       <label>Wybierz kolor butów <input type="color" name="favorite"></label>
+    </fieldset>
+    <fieldset>
+        <legend>Rozmiar</legend>
+        <p>Wybierz swój rozmiar!: <select name="size" size="1">
+            <option>37</option>
+            <option>38</option>
+            <option>39</option>
+            <option>40</option>
+            <option>41</option>
+            <option>42</option>
+            <option>43</option>
+            <option>44</option>
+            <option>45</option>
+            <option>46</option>
+            <option>47</option>
+        </select>
+        </p>
+        <p><input type="submit" value="Podrasuj swoje buty!">
+            <input type="reset"></p>
+    </fieldset>
+</form>
+
+
+</div>
+</body>
+</html>

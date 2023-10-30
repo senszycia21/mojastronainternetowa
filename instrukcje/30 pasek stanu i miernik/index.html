@@ -1,0 +1,45 @@
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Znaczniki &lt;progress&gt; i &lt;meter&gt;</title>
+  <meta name="author" content="Sergiusz Pietralczyk" />
+  <style>
+    body {
+      font-family: 'Palatino Linotype', serif;
+    }
+    h1 {
+      font-size: x-large;
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+    p {
+      margin: 2px;
+    }
+    .separatedSection {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<h1>Paski postępu</h1>
+Postęp: <progress max=100 value=50>50%</progress><br>
+Postęp: <progress>Wykonywanie zadania w toku... </progress><br>
+Pobieranie: <progress max=100 value=21>21%</progress>
+<h1>Wskaźniki</h1>
+Twoja walizka waży: <meter min="2" max="20" value="16">13 kilogramów</meter><br>
+Twoja walizka waży: <meter min="2" max="20" low="4" high="15" value="16">16 kilogramów</meter><br>
+Twój plecak waży <meter min="1" max="30" value="5">5 kilogramów</meter>
+<p><small>* Bagaże cięższe niż 15 kilogramów podlegają dodatkowej opłacie.</small></p>
+<div class="separatedSection">
+  <p>Naszym celem jest zebranie 50 000 dolarów na rzecz fundacji FRL (Fundacja Ratowania Lemingów).</p>
+  <p>Do tej pory zebraliśmy 14 000 dolarów. <meter max="50000" value="14000"></meter>
+  <br><br>
+  <p>Zbieram na nowy komputer 8000 złotych.</p>
+  <p>Łącznie zebrałem 4000 złotych. <meter max="8000" value="4000"></meter>
+
+
+
+</p>
+</div>
+</body>
+</html>
